@@ -29,8 +29,24 @@
 
 <div class="container" id="reponseB">
     <h1>Réponse à l'énigme B</h1>
-    <p>Voici la réponse à l'énigme B...</p>
+    <p>Voici la réponse à l'énigme B: Lorsqu'on relie les flammes des bougies de la plus petite à la plus grande, nous obtenons le chiffre 5.</p>
 </div>
+
+    <div class="container" id="reponseC">
+    <h1>Réponse à l'énigme C</h1>
+    <p>Voici la réponse à l'énigme C: Certaines pièces comportent des oiseaux. Si on les compte, on obtient le chiffre 7.</p>
+</div>
+
+       <div class="container" id="reponseD">
+    <h1>Réponse à l'énigme D</h1>
+    <p>Voici la réponse à l'énigme D: Nous pouvons aperçevoir sur le miroir le chiffre 9.</p>
+</div>
+
+      <div class="container" id="reponseE">
+    <h1>Réponse à l'énigme E</h1>
+    <p>Voici la réponse à l'énigme E: Les gardiens nous avaient indiqués que le bijou avait 8 rubis. Si on suit l'ordre des cartes, le code est 9875.</p>
+</div>
+
 
 <!-- Ajoutez d'autres conteneurs pour les énigmes C, D, et E ici -->
 
@@ -44,9 +60,18 @@
         case "B":
             document.getElementById('reponseB').style.display = 'block';
             break;
+             case "C":
+            document.getElementById('reponseC').style.display = 'block';
+            break;
+             case "D":
+            document.getElementById('reponseD').style.display = 'block';
+            break;
+             case "E":
+            document.getElementById('reponseE').style.display = 'block';
+            break;
         // Ajoutez d'autres cas pour les énigmes C, D, et E ici
         default:
-            alert("Énigme non reconnue. Assurez-vous de taper correctement le nom de l'énigme.");
+            alert("Énigme non reconnue. Assurez-vous de taper correctement la lettre de l'énigme en majuscule : A,B,C,D ou E.");
             break;
     }
 </script>
