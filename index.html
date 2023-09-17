@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Énigme Résolue</title>
+    <title>Réponses aux Énigmes</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -21,23 +21,36 @@
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Vous souhaitez un indice? Tapez le nom de énigme dans la boite de dialogue! Par exemple, vous pouvez simplement écrire "énigme A"</h1>
-    </div>
 
-    <script>
-        var motDePasseCorrect = "MURDERLOVER"; // Remplacez "1234" par votre mot de passe
-        var motDePasse;
-        
-        do {
-            motDePasse = prompt("Entrez le mot de passe à 4 chiffres:");
-            
-            if (motDePasse === motDePasseCorrect) {
-                document.querySelector('.container').style.display = 'block';
-            } else if (motDePasse !== null) { // Vérifie si l'utilisateur n'a pas cliqué sur "Annuler"
-                alert("Mot de passe incorrect! Veuillez réessayer.");
-            }
-        } while (motDePasse !== motDePasseCorrect && motDePasse !== null);
-    </script>
+<div class="container" id="reponseA">
+    <h1>Réponse à l'énigme A</h1>
+    <p>Voici la réponse à l'énigme A...</p>
+</div>
+
+<div class="container" id="reponseB">
+    <h1>Réponse à l'énigme B</h1>
+    <p>Voici la réponse à l'énigme B...</p>
+</div>
+
+<!-- Ajoutez d'autres conteneurs pour les énigmes C, D, et E ici -->
+
+<script>
+    var enigme = prompt("Pour quelle énigme souhaitez-vous un indice? (A, B, C, D, E)");
+
+    switch (enigme.toUpperCase()) {
+        case "A":
+            document.getElementById('reponseA').style.display = 'block';
+            break;
+        case "B":
+            document.getElementById('reponseB').style.display = 'block';
+            break;
+        // Ajoutez d'autres cas pour les énigmes C, D, et E ici
+        default:
+            alert("Énigme non reconnue. Assurez-vous de taper correctement le nom de l'énigme.");
+            break;
+    }
+</script>
+
 </body>
 </html>
+
